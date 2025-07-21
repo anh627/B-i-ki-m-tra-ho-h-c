@@ -1,0 +1,12 @@
+chemistry-test-system/
+├── index.html
+├── student.html
+├── teacher.html
+├── styles/
+│   ├── main.css
+│   ├── student.css
+│   └── teacher.css
+└── scripts/
+    ├── database.js
+    ├── student.js
+    └── teacher.js
