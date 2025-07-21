@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáo Viên - Quản Lý Bài Kiểm Tra</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/teacher.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CHẾ ĐỘ GIÁO VIÊN</h1>
+            <div class="teacher-controls">
+                <button id="create-new-test">Tạo bài kiểm tra mới</button>
+                <button id="load-test">Tải bài kiểm tra</button>
+                <input type="text" id="test-save-name" placeholder="Tên bài kiểm tra">
+                <button id="save-test">Lưu bài kiểm tra</button>
+            </div>
+        </header>
+        
+        <div id="test-creator" class="hidden">
+            <div class="question-types">
+                <h3>Loại câu hỏi:</h3>
+                <select id="question-type">
+                    <option value="element">Nhận biết nguyên tố</option>
+                    <option value="equation">Cân bằng phương trình</option>
+                    <option value="atom">Cấu tạo nguyên tử</option>
+                    <option value="multiple-choice">Trắc nghiệm</option>
+                </select>
+                <button id="add-question">Thêm câu hỏi</button>
+            </div>
+            
+            <div id="question-editor"></div>
+            
+            <div id="test-preview">
+                <h3>Xem trước bài kiểm tra</h3>
+                <div id="preview-questions"></div>
+            </div>
+            
+            <div class="test-meta">
+                <h3>Thông tin bài kiểm tra</h3>
+                <input type="text" id="test-name" placeholder="Tên bài kiểm tra">
+                <input type="text" id="test-code" placeholder="Mã bài kiểm tra (6 chữ số)">
+                <button id="generate-code">Tạo mã ngẫu nhiên</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/database.js"></script>
+    <script src="scripts/teacher.js"></script>
+</body>
+</html>
