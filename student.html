@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Sinh - Kiểm Tra Hóa Học</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/student.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CHẾ ĐỘ HỌC SINH</h1>
+            <div class="student-info">
+                <input type="text" id="student-name" placeholder="Nhập tên của bạn">
+                <input type="text" id="test-code" placeholder="Nhập mã bài kiểm tra">
+                <button id="start-test">Bắt đầu làm bài</button>
+            </div>
+        </header>
+        
+        <div id="test-container" class="hidden">
+            <div id="question-area"></div>
+            <button id="submit-test">Nộp bài</button>
+        </div>
+        
+        <div id="result-container" class="hidden">
+            <h2>KẾT QUẢ</h2>
+            <div id="score-display"></div>
+            <div id="answer-review"></div>
+        </div>
+    </div>
+    
+    <script src="scripts/database.js"></script>
+    <script src="scripts/student.js"></script>
+</body>
+</html>
